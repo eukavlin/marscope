@@ -1,0 +1,11 @@
+body {
+    color: blue;
+}
+header{
+  height: 200px;
+}
+nav, nav a, nav ul, nav li {
+    height: 200px;
+    color: white;
+    font-family: sans-serif;
+}
