@@ -1,11 +1,23 @@
-body {
-    color: blue;
+/*  box-shadow: 0px 15px 60px 1px rgba(47, 48, 54, 0.45);*/
+.logo_simplon_mars{
+  width: 10%;
+  z-index: 1;
 }
-header{
-  height: 200px;
+nav{
+  margin-top: 100px;
 }
-nav, nav a, nav ul, nav li {
-    height: 200px;
-    color: white;
-    font-family: sans-serif;
+
+.nav li:hover a {
+    background-color: white;
+    color: #488aab;
+    border-left: 1px solid #488aab;
+    border-right: 1px solid #488aab;
+
+}
+.nav li a {
+    color: #488aab;
+    background-color: white;
+    box-shadow: 0px 15px 45px 1px rgba(47, 48, 54, 0.25);
+
+
 }
