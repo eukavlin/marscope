@@ -1,0 +1,92 @@
+body {
+    margin: 0 30px;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.logo_simplon_mars {
+    width: 10%;
+    z-index: 1;
+}
+.poabsul{
+  top: 0;
+  left: 0;
+}
+.hid_ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav {
+    margin-top: 100px;
+}
+
+.nav li:hover a {
+    background-color: white;
+    color: #488aab;
+    border-left: 1px solid #488aab;
+    border-right: 1px solid #488aab;
+}
+
+.nav li a {
+    color: #488aab;
+    background-color: white;
+    box-shadow: 0px 15px 45px 1px rgba(47, 48, 54, 0.25);
+}
+
+.toggle1l {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+.fa{
+  font-size: 2em;
+  padding:0 0.75em;
+}
+
+.thumbnail {
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    height: calc(100% - 24px);
+    width: calc(100% - 20px);
+    opacity: 0;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.pclicon{
+  padding-top: 30vh;
+
+}
+.clicon{
+  font-size: 3em;
+}
+
+
+.btn {
+    width: 60%;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid .w-1-4 {
+        width: calc(100%/3);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid .w-1-4 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid .w-1-4 {
+        width: 100%;
+    }
+}
