@@ -1,0 +1,28 @@
+
+<!-- dans le head pour les clicon code language icon -->
+<!-- http://devicon.fr/-->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+<!-- in your body -->
+<!-- c -->
+<i class="devicon-c-plain-wordmark colored"></i>
+<!-- css3 -->
+<i class="devicon-css3-plain-wordmark colored"></i>
+<!-- html5 -->
+<i class="devicon-html5-plain-wordmark colored"></i>
+<!-- html5 -->
+<i class="devicon-javascript-plain colored"></i>
+<!-- php -->
+<i class="devicon-php-plain colored"></i>
+
+
+
+
+
+<!-- pour les reseaux sociaux awesome font -->
+<script src="https://use.fontawesome.com/d78be030cc.js"></script>
+<!-- envelopp mail -->
+<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+<!-- twitter -->
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<!-- facebook -->
+<i class="fa fa-facebook" aria-hidden="true"></i>
