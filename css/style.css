@@ -40,9 +40,6 @@ nav {
     color: #488aab;
   }
 
-.nav li {
-  z-index: 10;
-}
 
 .nav li a {
     color: #488aab;
@@ -58,11 +55,14 @@ nav {
 
 .fa {
     font-size: 2em;
-    padding: 0 0.75em;
+    padding: 0.5em;
 }
 
 /* == END NAV == */
-
+.smthumb{
+  padding-top: 1em;
+  color: white;
+}
 .thumbnail {
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -179,6 +179,6 @@ h1{
     }
     .thumbnail .clicon{
       font-size: 3.5em;
-      opacity: 1;
+      op
     }
 }
