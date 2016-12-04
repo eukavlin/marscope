@@ -23,13 +23,21 @@ body {
 nav {
     margin-top: 100px;
 }
-
+.nav li:hover ul a {
+    background-color: #ffffff;
+    color: #488aab;
+    display: inline;
+  }
 .nav li:hover a {
     background-color: white;
     color: #488aab;
     border-left: 1px solid #488aab;
     border-right: 1px solid #488aab;
 }
+.nav li:hover a, .nav li:hover {
+    background-color: #ffffff;
+    color: #488aab;
+  }
 
 .nav li a {
     color: #488aab;
@@ -60,7 +68,9 @@ ul {
     width: calc(100% - 20px);
     opacity: 0;
 }
-
+.envthumb{
+  color : white;
+}
 .thumbnail:hover {
     opacity: 1;
     transition: opacity 0.5s;
@@ -73,16 +83,18 @@ blockquote {
 
 .clicon {
     font-size: 3em;
-    padding: 0.5 0.75em;
+    padding: 0.5em 0.25em;
     display: inline-block;
 }
-
+input[type="radio"] {
+    display:none;
+}
 .btn {
     width: 60%;
     margin: 5px;
 }
 h1{
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -100,5 +112,9 @@ h1{
 @media only screen and (max-width: 768px) {
     .grid .w-1-4 {
         width: 100%;
+    }
+    .thumbnail{
+      top: 40em;
+      opacity: 1;
     }
 }
