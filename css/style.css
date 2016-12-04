@@ -8,14 +8,16 @@ body {
     width: 10%;
     z-index: 1;
 }
-.poabsul{
-  top: 0;
-  left: 0;
+
+.poabsul {
+    top: 0;
+    left: 0;
 }
-.hid_ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+.hid_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 nav {
@@ -40,13 +42,14 @@ nav {
     flex-direction: row;
     align-content: space-around;
 }
-.fa{
-  font-size: 2em;
-  padding:0 0.75em;
+
+.fa {
+    font-size: 2em;
+    padding: 0 0.75em;
 }
 
 ul {
-  left:0;
+    left: 0;
 }
 
 .thumbnail {
@@ -64,21 +67,22 @@ ul {
 }
 
 blockquote {
-  font-size: 1em; 
+    font-size: 1em;
 }
 
-.pclicon{
-  padding: 15px 5px;
 
+.clicon {
+    font-size: 3em;
+    padding: 0.5 0.75em;
+    display: inline-block;
 }
-.clicon{
-  font-size: 2.5em;
-}
-
 
 .btn {
     width: 60%;
     margin: 5px;
+}
+h1{
+  margin-top: 120px;
 }
 
 @media only screen and (max-width: 1200px) {
