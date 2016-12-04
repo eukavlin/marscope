@@ -45,6 +45,10 @@ nav {
   padding:0 0.75em;
 }
 
+ul {
+  left:0;
+}
+
 .thumbnail {
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -58,12 +62,17 @@ nav {
     opacity: 1;
     transition: opacity 0.5s;
 }
+
+blockquote {
+  font-size: 1em; 
+}
+
 .pclicon{
-  padding-top: 30vh;
+  padding: 15px 5px;
 
 }
 .clicon{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 
