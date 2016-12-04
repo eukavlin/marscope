@@ -29,6 +29,10 @@ nav {
     border-right: 1px solid #488aab;
 }
 
+.nav li {
+  z-index: 10;
+}
+
 .nav li a {
     color: #488aab;
     background-color: white;
@@ -40,12 +44,8 @@ nav {
     flex-direction: row;
     align-content: space-around;
 }
-.fa{
-  font-size: 2em;
-  padding:0 0.75em;
-}
 
-ul {
+ul, .show-menu {
   left:0;
 }
 
@@ -65,14 +65,16 @@ ul {
 
 blockquote {
   font-size: 1em;
+  padding: 5%;
 }
 
-.pclicon{
-  padding: 15px 5px;
+.pclicon, .clicon{
+  padding: 15px 10px;
 
 }
-.clicon{
-  font-size: 2.5em;
+.thumbnail .clicon{
+  padding: 15px 2%;
+  font-size: 2em;
 }
 
 
@@ -126,16 +128,35 @@ blockquote {
     .grid .w-1-4 {
         width: calc(100%/3);
     }
+    .grid h2 {
+      font-size: 2em;
+    }
+    .thumbnail .clicon{
+      font-size: 2.5em;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
     .grid .w-1-4 {
         width: 50%;
     }
+    .grid h2 {
+      font-size: 2.5em;
+    }
+    .thumbnail .clicon{
+      font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .grid .w-1-4 {
         width: 100%;
+    }
+    .grid h2 {
+      font-size: 3em;
+    }
+    .thumbnail .clicon{
+      font-size: 3.5em;
     }
 }
