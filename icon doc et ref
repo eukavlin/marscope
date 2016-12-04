@@ -20,9 +20,8 @@
 
 <!-- pour les reseaux sociaux awesome font -->
 <script src="https://use.fontawesome.com/d78be030cc.js"></script>
-<!-- envelopp mail -->
-<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-<!-- twitter -->
-<i class="fa fa-twitter" aria-hidden="true"></i>
-<!-- facebook -->
-<i class="fa fa-facebook" aria-hidden="true"></i>
+<a href="#"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
