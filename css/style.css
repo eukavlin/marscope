@@ -40,6 +40,10 @@ nav {
     color: #488aab;
   }
 
+.nav li {
+  z-index: 10;
+}
+
 .nav li a {
     color: #488aab;
     background-color: white;
@@ -57,9 +61,6 @@ nav {
     padding: 0 0.75em;
 }
 
-ul {
-    left: 0;
-}
 /* == END NAV == */
 
 .thumbnail {
@@ -80,16 +81,19 @@ ul {
 
 blockquote {
     font-size: 1em;
-
-
-
-.clicon {
-    font-size: 3em;
-    padding: 0.5em 0.25em;
-    display: inline-block;
+      padding: 5%;
 }
-input[type="radio"] {
-    display:none;
+.pclicon, .clicon{
+  padding: 15px 10px;
+}
+
+nav .clicon {
+  font-size: 2em;
+}
+
+.thumbnail .clicon{
+  padding: 15px 2%;
+  font-size: 2em;
 }
 .btn {
     width: 60%;
@@ -144,11 +148,24 @@ h1{
     .grid .w-1-4 {
         width: calc(100%/3);
     }
+    .grid h2 {
+      font-size: 2em;
+    }
+    .thumbnail .clicon{
+      font-size: 2.5em;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {
     .grid .w-1-4 {
         width: 50%;
+    }
+    .grid h2 {
+      font-size: 2.5em;
+    }
+    .thumbnail .clicon{
+      font-size: 3em;
     }
 }
 
@@ -156,8 +173,12 @@ h1{
     .grid .w-1-4 {
         width: 100%;
     }
-    .thumbnail{
-      top: 40em;
+
+    .grid h2 {
+      font-size: 3em;
+    }
+    .thumbnail .clicon{
+      font-size: 3.5em;
       opacity: 1;
     }
 }
