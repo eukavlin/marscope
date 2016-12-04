@@ -70,8 +70,12 @@ blockquote {
 
 .pclicon, .clicon{
   padding: 15px 10px;
-
 }
+
+nav .clicon {
+  font-size: 2em;
+}
+
 .thumbnail .clicon{
   padding: 15px 2%;
   font-size: 2em;
