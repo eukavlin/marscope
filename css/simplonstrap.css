@@ -49,18 +49,35 @@ img {
 
 /*** Positions ***/
 
-.relative, .porel, .rel {
+.relative, .rel, .porel {
     position: relative;
 }
 
-/*Position absolute - to place object in corners of its closest positioned ancestor- you can use .abs class and fill in value otherwise*/
+.postat {
+    position: static;
+}
+
+/* Position absolute */
 
 .abs, .poabs {
   position: absolute;
-  top: ;
-  right: ;
 }
-
+.abstop, .abst {
+  position: absolute;
+  top: 0;
+}
+.absbottom, .absb {
+  position: absolute;
+  bottom: 0;
+}
+.absleft, .absl {
+  position: absolute;
+  left: 0;
+}
+.absright, .absr {
+  position: absolute;
+  right: 0;
+}
 .abstopright, .abstr, .poabsur {
   position: absolute;
   top: 0;
@@ -82,20 +99,54 @@ img {
   left: 0;
 }
 
-.pofix {
-    position: fixed;
-}
 
-.postat {
-    position: static;
-}
+/* Fixed position - to place an object fixed in the viewport */
 
-.pofixup {
+.fix, .pofix {
+  position: fixed;
+}
+.fixtop, .fixt {
+  position: fixed;
+  top: 0;
+}
+.fixbottom, .fixb {
+  position: fixed;
+  bottom: 0;
+}
+.fixleft, .fixl {
+  position: fixed;
+  left: 0;
+}
+.fixright, .fixr {
+  position: fixed;
+  right: 0;
+}
+.fixtopright, .fixtr {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.fixtopleft, .fixtl {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.fixbottomright, .fixbr {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.fixbottomleft, .fixbl {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.fixtop, .fixt,.pofixup {
     position: fixed;
     top: 0;
 }
 
-.pofixdown {
+.fixbottom, .fixb, .pofixdown {
     position: fixed;
     bottom: 0;
 }
@@ -189,17 +240,20 @@ img {
 }
 
 .textleft, .tl, .leftt {
-  text-align: right;;
-}
-
-.textright, .tr, .rightt {
   text-align: left;
 }
 
-.textcenter, .tc, .centert {
-  text-align:center;
+.textright, .tr, .rightt {
+  text-align: right;
 }
 
+.textcenter, .tc, .centert {
+  text-align: center;
+}
+
+.textjustify, .tj {
+  text-align: justify;
+}
 /*** Border Radius ***/
 .border-radius {
   border-radius:0.4em;
@@ -224,12 +278,6 @@ code {
     color: white;
 }
 
-/* -----------------------------------------------Navigation Bar */
-
-/* Navigation Bar*/
-.nav {
-    width: 100%;
-}
 .nav>ul {
     list-style-type: none;
     width: 100%;
@@ -288,6 +336,105 @@ code {
     display: block;
 }
 
+.clearnav{
+  padding-top: 50px;
+}
+
+/* Navigation Bar inline-block*/
+.navi {
+    font-size: 1em;
+}
+
+.navi ul {
+    list-style: none;
+    background-color: #2f3036;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navi li {
+    text-align: left;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.navi a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 15px;
+    transition: .3s;
+}
+
+.navi a:hover {
+    background-color: #aaaaaa;
+    color: black;
+}
+
+.navi li li {
+    font-size: .8em;
+}
+
+.navi>ul>li {
+    text-align: center;
+}
+
+.navi>ul>li>a {
+    padding-left: 0;
+}
+
+.navi li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.navi li:hover ul {
+    display: block;
+}
+
+.navi li:hover ul a {
+    background-color: #aaaaaa;
+    color: #2f3036;
+}
+
+.navi li:hover ul a:hover {
+    background-color: #e2575e;
+    transition: 0.3s;
+}
+
+.navi input[type=checkbox],.navi .show-menu {
+    display: none;
+}
+
+.navi .show-menu {
+    color: #fff;
+    background-color: #2f3036;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navi input[type=checkbox]:checked~ul:first-of-type {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .navi {
+        width: 100%;
+    }
+    .navi ul li, .nav li a {
+        width: 100%;
+    }
+    .navi .show-menu {
+        display: block;
+    }
+    .navi>ul {
+        display: none;
+    }
+}
 /* -----------------------------------------------Grid */
 
 /*- The Responsive Grid */
@@ -315,73 +462,72 @@ code {
   box-sizing: border-box;
 }
 
-*[class*="w-"],
-.one-twelve,
-.two-twelve,
-.three-twelve,
-.four-twelve,
-.five-twelve,
-.six-twelve,
-.seven-twelve,
-.eight-twelve,
-.nine-twelve,
-.ten-twelve,
-.onze-twelve,
-.twelve-twelve
-{
+.grid *[class*="w-"], .grid *[class*="-twelve"] {
   float: left;
   padding: 10px;
 }
-/* Grid Widths */
+/* Widths in relative values, to use within, or out of the grid*/
 /*--1/12--*/
-.grid .one-twelve, .grid .w-1-12 {
+.one-twelve, .w-1-12 {
     width: calc(100%/12);
 }
 /*--2/12--*/
-.grid .two-twelve, .grid .w-1-6, .grid .w-2-12 {
+.two-twelve, .w-1-6, .w-2-12 {
     width: calc(100%/6);
 }
 /*--3/12--*/
-.grid .three-twelve, .grid .w-1-4, .grid .w-3-12 {
-    width: calc(300%/12);
+.three-twelve, .w-1-4, .w-3-12 {
+    width: 25%;
 }
 /*--4/12--*/
-.grid .four-twelve, .grid .w-1-3,.grid .w-2-6, .grid .w-4-12 {
+.four-twelve, .w-1-3, .w-2-6, .w-4-12 {
     width: calc(100%/3);
 }
 /*--5/12--*/
-.grid .five-twelve, .grid .w-5-12 {
+.five-twelve, .w-5-12 {
     width: calc(500%/12);
 }
 /*--6/12--*/
-.grid .six-twelve, .grid .w-1-2, .grid .w-2-4, .grid .w-3-6, .grid .w-6-12{
+.six-twelve, .w-1-2, .w-2-4, .w-3-6, .w-6-12{
     width: 50%;
 }
 /*--7/12--*/
-.grid .seven-twelve, .grid .w-7-12 {
+.seven-twelve, .w-7-12 {
     width: calc(700%/12);
 }
 /*--8/12--*/
-.grid .eight-twelve, .grid .w-2-3,.grid .w-4-6, .grid .w-8-12 {
+.eight-twelve, .w-2-3, .w-4-6, .w-8-12 {
     width: calc(200%/3);
 }
 /*--9/12--*/
-.grid .nine-twelve, .grid .w-3-4, .grid .w-9-12 {
+.nine-twelve, .w-3-4, .w-9-12 {
     width: 75%;
 }
 /*--10/12--*/
-.grid .ten-twelve, .grid .w-5-6, .grid .w-10-12 {
+.ten-twelve, .w-5-6, .w-10-12 {
     width: calc(500%/6);
 }
 /*--11/12--*/
-.grid .onze-twelve, .grid .w-11-12 {
+.onze-twelve, .w-11-12 {
     width: calc(1100%/12);
 }
 /*--12/12--*/
-.grid .twelve-twelve, .grid .w-12-12, .grid .w-1{
+.twelve-twelve, .w-12-12, .w-1{
     width: 100%;
 }
-
+/** Moar width**/
+/*1 Tenth of its closest ancestor*/
+.w-1-10 {
+  width: 10%;
+}
+/*1 quarter of its closest ancestor*/
+.w-1-8 {
+  width: 12.5%;
+}
+/*1 fifth of its closest ancestor*/
+.w-1-5 {
+  width: 20%;
+}
 /**Grid Media Query**/
 @media (max-width:768px){
   .grid [class*="w-"] {
@@ -624,31 +770,7 @@ code {
 .w900p {width: 900px;}
 .w950p {width: 950px;}
 .w1000p {width: 1000px;}
-/*- For those who want some percentage widths, but don't want to bother with the grid*/
-/*1 quarter of its closest ancestor*/
-.w-1-4 {
-  width: 25%;
-}
-/*1 third of its closest ancestor*/
-.w-1-3 {
-  width: calc(100%/3);
-}
-/*half of its closest ancestor*/
-.w-1-2 {
-  width: 50%;
-}
-/*2 third of its closest ancestor*/
-.w-2-3 {
-  width: calc(100%*2/3);
-}
-/*3 quarters of its closest ancestor*/
-.w-3-4 {
-  width: 75%;
-}
-/*100 percent of its closest ancestor*/
-.w-1-1 {
-  width: 100%;
-}
+
 
 /*-Height*/
 .h10p {height: 10px;}
@@ -709,13 +831,16 @@ code {
 
 
 /* -----------------------------------------------Media Queries */
-
+@media screen and (max-width: 1100px) {
+  .nav {
+    font-size: 1.5vw;
+  }
+}
 @media screen and (max-width: 800px) {
 
     /*------------------------------------------------Form*/
     .form {
         margin: 0;
-        width: 100%;
         border-radius: 0px;
     }
     .form label {
@@ -748,7 +873,9 @@ code {
         width: 100%;
     }
     /*------------------------------------------------Nav*/
-
+    .nav {
+      font-size: 1em;
+    }
     .nav ul li, .nav li a {
         width: 100%;
     }

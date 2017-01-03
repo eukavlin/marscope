@@ -10,43 +10,48 @@
     <title>Promo 2016 - SIMPLonMARS</title>
     <!-- css a reprendre-->
     <link rel="stylesheet" href="css/simplonstrap.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <!-- css modifié-->
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 </head>
 
 <body>
-    <header>
-        <div class="logo_simplon_mars poabsul"><img src="img/logoSimplonMars.png" alt="logo Simplon Mars" />
-
-        </div>
-        <nav class="nav">
+    <header class="flex  porel">
+      <div class="simplonlogo">
+        <img src="img/logosom.png" alt="Simplon Mars" class="logo_simplon_mars" />
+      </div>
+        <nav class="navi floatr poabsdr" role="navigation">
+            <label for="show-menu" class="show-menu"><span class="icon icon-bars"></span></label>
+            <input type="checkbox" id="show-menu" role="button">
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="#grid">Filtre</a>
+                <li>
+                    <a href="#">A propos ▼</a>
                     <ul class="hid_ul">
-                        <li class="toggle1l">
-                            <i class="devicon-c-plain-wordmark colored clicon c"></i>
-                            <i class="devicon-css3-plain-wordmark colored clicon css3"></i>
-                            <i class="devicon-html5-plain-wordmark colored clicon html5"></i>
-                            <i class="devicon-javascript-plain colored clicon javascript"></i>
-                            <i class="devicon-php-plain colored clicon php"></i>
-                        </li>
+                        <li><a href="http://simplonmars.eu/formation.php">La formation</a></li>
+                        <li><a href="http://simplonmars.eu/equipe.php">Équipe</a></li>
+                        <li><a href="http://simplonmars.eu/presse.php">Presse</a></li>
                     </ul>
                 </li>
-                <li><a href="">Contactez SimplonMars</a>
+                <li><a href="http://simplonmars.eu/nospromos.php">Nos promos</a></li>
+                <li>
+                    <a href="#">Écosystème ▼</a>
                     <ul class="hid_ul">
-                        <li class="toggle1l">
-                            <a href="#"><i class="fa fa-envelope-open-o clicon" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter clicon" aria-hidden="true"></i></a>
-                        </li>
+                        <li><a href="http://simplonmars.eu/simplon.php">Simplon.co</a></li>
+                        <li><a href="http://simplonmars.eu/centrale.php">Centrale Marseille</a></li>
+                        <li><a href="http://simplonmars.eu/marseillesolution.php">Marseille Solutions</a></li>
+                        <li><a href="http://simplonmars.eu/technopole.php">Château Gombert</a></li>
                     </ul>
                 </li>
+                <li><a href="http://simplonmars.eu/contact.php">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <label for="show-menu" class="show-menu">Fermer ▲</label>
             </ul>
         </nav>
-      </header>
+        <div class="clearnav"></div>
+    </header>
     <div class="grid dflex-a borderbox centert floatfix">
         <h1>Promo 2016</h1>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/samuel.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Samuel Arlaud</h2>
@@ -63,14 +68,14 @@
                     <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
                 </p>
-                          </div>
+            </div>
 
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/fodil.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Fodil Azli</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-php-plain colored clicon"></i>
                 </div>
@@ -81,13 +86,13 @@
                     <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
                 </p>
-                          </div>
+            </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/jj.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Jean-Jacques Barbier</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                 </div>
@@ -100,11 +105,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/laurene.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Laurene Bergman</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -122,53 +127,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/ryhad.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Ryhad Boughanmi</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
-                <div class="pclicon">
-                    <i class="devicon-c-plain-wordmark colored clicon"></i>
-                    <i class="devicon-css3-plain-wordmark colored clicon"></i>
-                    <i class="devicon-html5-plain-wordmark colored clicon"></i>
-                    <i class="devicon-javascript-plain colored clicon"></i>
-                    <i class="devicon-php-plain colored clicon"></i>
-                </div>
-                <p>
-                    <a href="#"><i class="fa smthumb fa-envelope-open-o" aria-hidden="true"></i></a><br>
-                    <a href="#"><i class="fa smthumb fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
-                </p>
-                          </div>
-        </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
-            <div class="poabsul thumbnail">
-
-                <h2>Élise Brodin</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
-                <div class="pclicon">
-                    <i class="devicon-c-plain-wordmark colored clicon"></i>
-                    <i class="devicon-css3-plain-wordmark colored clicon"></i>
-                    <i class="devicon-html5-plain-wordmark colored clicon"></i>
-                    <i class="devicon-javascript-plain colored clicon"></i>
-                    <i class="devicon-php-plain colored clicon"></i>
-                </div>
-                <p>
-                    <a href="#"><i class="fa smthumb fa-envelope-open-o" aria-hidden="true"></i></a><br>
-                    <a href="#"><i class="fa smthumb fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
-                </p>
-                          </div>
-        </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
-            <div class="poabsul thumbnail">
-
-                <h2>Kevin Castejon</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -185,11 +148,53 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/elise.jpg" alt="" class="faces" />
+            <div class="poabsul thumbnail">
+
+                <h2>Élise Brodin</h2>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <div class="pclicon">
+                    <i class="devicon-c-plain-wordmark colored clicon"></i>
+                    <i class="devicon-css3-plain-wordmark colored clicon"></i>
+                    <i class="devicon-html5-plain-wordmark colored clicon"></i>
+                    <i class="devicon-javascript-plain colored clicon"></i>
+                    <i class="devicon-php-plain colored clicon"></i>
+                </div>
+                <p>
+                    <a href="#"><i class="fa smthumb fa-envelope-open-o" aria-hidden="true"></i></a><br>
+                    <a href="#"><i class="fa smthumb fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="w-1-4 porel"><img src="img/pics/kevin.jpg" alt="" class="faces" />
+            <div class="poabsul thumbnail">
+
+                <h2>Kevin Castejon</h2>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <div class="pclicon">
+                    <i class="devicon-c-plain-wordmark colored clicon"></i>
+                    <i class="devicon-css3-plain-wordmark colored clicon"></i>
+                    <i class="devicon-html5-plain-wordmark colored clicon"></i>
+                    <i class="devicon-javascript-plain colored clicon"></i>
+                    <i class="devicon-php-plain colored clicon"></i>
+                </div>
+                <p>
+                    <a href="#"><i class="fa smthumb fa-envelope-open-o" aria-hidden="true"></i></a><br>
+                    <a href="#"><i class="fa smthumb fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-viadeo" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa smthumb fa-linkedin" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="w-1-4 porel"><img src="img/pics/ibni.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Ibni-Yamine Chabane</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor ed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor ed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -210,7 +215,7 @@
             <div class="poabsul thumbnail">
 
                 <h2>Valentin Dissais</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -227,11 +232,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/alice.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Alice Dransfield</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -248,11 +253,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/alex.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Alexandra Dubost</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -269,11 +274,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/camille.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Camille Francia</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -290,11 +295,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/jessica.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Jessica Guillot</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -311,11 +316,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/okba.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Okba Hamidi</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -332,11 +337,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/felix.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Félix Hauger</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -353,11 +358,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/felix.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Linda Khelifi</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -374,11 +379,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/mohamed.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Mohamed Khous</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -395,11 +400,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/seif.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Seifiddine Maachaoui</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit  incididun tincididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit incididun tincididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -416,11 +421,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/julien.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Julien Magnin</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -438,11 +443,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/sophie.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Sophie Martel</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -459,11 +464,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/sylvain.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Sylvain Montel</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -480,11 +485,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/jamil.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Jamil Rahou</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -501,11 +506,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/jonathan.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Jonathan Schmidt</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -522,11 +527,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/cesar.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>César Tailleur</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>
@@ -543,11 +548,11 @@
                 </p>
             </div>
         </div>
-        <div class="w-1-4 porel"><img src="img/portrait-f1.jpg" alt="" class="faces" />
+        <div class="w-1-4 porel"><img src="img/pics/mario.jpg" alt="" class="faces" />
             <div class="poabsul thumbnail">
 
                 <h2>Mario Vanhove-Lamon</h2>
-                                 <blockquote cite="Citation">"Lorem ipsum dolor sit amet, cusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
+                <blockquote cite="Citation">"Lorem ipsum dolor sit amet, cusmod tempor incididunt ut labore et dolore magna aliqua"</blockquote>
                 <div class="pclicon">
                     <i class="devicon-c-plain-wordmark colored clicon"></i>
                     <i class="devicon-css3-plain-wordmark colored clicon"></i>

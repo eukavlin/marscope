@@ -1,21 +1,69 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "font-icon";
+  src:url("fonts/font-icon.eot");
+  src:url("fonts/font-icon.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font-icon.woff") format("woff"),
+    url("fonts/font-icon.ttf") format("truetype"),
+    url("fonts/font-icon.svg#font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "font-icon" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "font-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bars:before {
+  content: "\61";
+}
+
 body {
-    margin: 0 30px;
     background-color: #EEEEEE;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 
 /* == NAV == */
 
-.logo_simplon_mars {
-    width: 10%;
-    z-index: 1;
+header {
+  background-color: #2f3036;
+  height: 100px;
+  z-index: 5;
+  box-shadow: 0 10px 15px #aaa;
 }
 
-.poabsul {
-    top: 2%;
-    left: 2%;
+.logo_simplon_mars {
+    height: 80%;
+    z-index: 1;
+    padding: 1vh 7vw;
 }
+
+
 
 .hid_ul {
     display: flex;
@@ -23,44 +71,25 @@ body {
     justify-content: space-around;
 }
 
-nav {
-    margin-top: 100px;
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
 
-.nav li:hover ul a {
-    background-color: #ffffff;
-    color: #488aab;
-    display: inline;
+.navi li:hover ul {
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
 }
 
-.nav li:hover a {
-    background-color: white;
-    color: #488aab;
-    border-left: 1px solid #488aab;
-    border-right: 1px solid #488aab;
+.clearnav {
+  padding: 0;
 }
 
-.nav li:hover a, .nav li:hover {
-    background-color: #ffffff;
-    color: #488aab;
-}
 
-.nav li a {
-    color: #488aab;
-    background-color: white;
-    box-shadow: 0px 15px 45px 1px rgba(47, 48, 54, 0.25);
-}
-
-.toggle1l {
-    display: flex;
-    flex-direction: row;
-    align-content: space-around;
-}
-
-.fa {
-    font-size: 2em;
-    padding: 0.5em;
-}
 
 
 /* == END NAV == */
@@ -71,11 +100,12 @@ nav {
 }
 
 .thumbnail {
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #FFF;
     height: calc(100% - 24px);
     width: calc(100% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
     opacity: 0;
 }
 
@@ -88,10 +118,7 @@ nav {
     transition: opacity 0.5s;
 }
 
-blockquote {
-    font-size: 1em;
-    padding: 5%;
-}
+
 
 .pclicon, .clicon {
     padding: 15px 10px;
@@ -111,9 +138,9 @@ nav .clicon {
     margin: 5px;
 }
 
-h1 {
+/*h1 {
     margin-top: 150px;
-}
+}*/
 
 
 /* == FOOTER == */
@@ -179,6 +206,21 @@ h1 {
     .thumbnail .clicon {
         font-size: 3em;
     }
+
+    header {
+      background-color: #2f3036;
+      height: 150px;
+    }
+    .simplonlogo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+      .navi input[type=checkbox]:checked~ul:first-of-type {
+          transform: translateY(260px);
+        }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -210,10 +252,13 @@ h1 {
     .nav {
         margin-top: 2%;
     }
-    .logo_simplon_mars {
-        width: 40%;
-        margin: 0 auto;
+
+    .simplonlogo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
     h1 {
         margin-top: 0;
     }
